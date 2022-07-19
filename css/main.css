@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: rgba(51, 50, 61, 0.8);
+  --title-color: #33323d;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "", "Arial", sans-serif;
+  font-size: 12px;
+  color: var(--text-color);
+  background-color: #fafafa;
+}
+
+.button {
+  margin: 0;
+  padding: 17px 36px 17px 32px;
+  border: 1px solid var(--title-color);
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: var(--title-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
