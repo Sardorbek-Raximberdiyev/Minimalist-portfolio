@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 2px solid green;
+  outline-offset: 2px;
+}
+
 :root {
   --text-color: rgba(51, 50, 61, 0.8);
   --title-color: #33323d;
@@ -15,13 +20,16 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "", "Arial", sans-serif;
+  font-weight: 400;
+  font-family: "Ibarra Real Nova", "Public Sans", "Arial", sans-serif;
   font-size: 12px;
   color: var(--text-color);
   background-color: #fafafa;
 }
 
 .button {
+  display: inline-block;
+  text-decoration: none;
   margin: 0;
   padding: 17px 36px 17px 32px;
   border: 1px solid var(--title-color);
@@ -37,4 +45,131 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+
+/* SITE HEADER */
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 54px;
+}
+
+.site-header__logo-link {
+  margin-right: 40px;
+}
+
+.logo-link {
+  display: flex;
+}
+
+.logo-link__img {
+  display: block;
+  object-fit: contain;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.sitenav__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Public sans";
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: var(--title-color);
+  transition: color 0.3s ease;
+}
+
+.sitenav__link:hover {
+  color: tomato;
+}
+
+.js-sitenav-link {
+  color: #5fb4a2;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+  flex-grow: 1;
+}
+
+.main-content__container {
+}
+
+.main-content__hero {
+  padding-top: 243px;
+  background-image: url(../img/Bitmap.jpg);
+  background-repeat: no-repeat;
+  background-size: 1110px 600px;
+}
+
+.hero__block {
+  width: 445px;
+  padding-top: 56px;
+  padding-bottom: 55px;
+  background-color: #fafafa;
+}
+
+.hero__title {
+  max-width: 390px;
+  margin-top: 0;
+  margin-bottom: 53px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+
+.hero__button {
+  position: relative;
+  width: 200px;
+  padding-left: 48px;
+  padding-right: 0;
+  border: 0;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Public Sans";
+  color: #fff;
+  background-color: #203a4c;
+}
+
+
+.hero__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(../img/hero-btn.svg);
+  background-repeat: no-repeat;
+  background-position: 16px 18px;
+}
+
+.hero__button:hover {
+  opacity: 0.8;
+}
+
+.hero__button:active {
+  transform: translateY(2px);
 }

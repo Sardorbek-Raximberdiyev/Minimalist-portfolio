@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Public+Sans&display=swap" rel="stylesheet">
+
   <title>Minimalist-Portfolio</title>
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -11,7 +16,31 @@
 </head>
 <body>
   <!-- SITE HEADEWR -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a class="site-header__logo-link logo-link" href="#">
+        <img class="logo-link__img" src="img/Combined-Shape.svg" alt="logo" width="60" height="32">
+      </a>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="index.html" target="blank">Home</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="portfolio.html" target="blank">Portfolio</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="contact.html" target="blank">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="main-content">
+    <div class="main-content__container container">
+      <div class="main-content__hero hero">
+        <div class="hero__block">
+          <h2 class="hero__title">Hey, I'm Alex Spencer and I love building beautiful websites</h2>
+          <a class="hero__button button" href="#">About me</a>
+        </div>
+      </div>
+    </div>
+  </main>
   <!-- JAVASCRIPT -->
   <script src="js/main.js"></script>
 </body>
