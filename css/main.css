@@ -33,18 +33,24 @@ body {
   display: inline-block;
   text-decoration: none;
   margin: 0;
-  padding: 17px 36px 17px 32px;
+  padding: 16px 35px 16px 31px;
   border: 1px solid var(--title-color);
   letter-spacing: 2px;
   font-family: Public sans;
+  text-transform: uppercase;
   background-color: transparent;
   color: var(--title-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
 }
 
 .button:hover {
   color: #fff;
   background-color: var(--title-color);
+}
+
+.button:active {
+  opacity: 0.6;
 }
 
 .container {
@@ -118,6 +124,10 @@ body {
   flex-grow: 1;
 }
 
+.main-content__container {
+  padding-bottom: 110px;
+}
+
 .main-content__hero {
   padding-top: 243px;
   background-image: url(../img/Bitmap.jpg);
@@ -183,7 +193,7 @@ body {
 .main-content__about {
   display: flex;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 40px;
 }
 
 .about__img {
@@ -191,6 +201,11 @@ body {
   height: 600px;
   object-fit: cover;
   margin-right: 125px;
+}
+
+.about__link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .about__block {
@@ -231,15 +246,13 @@ body {
   padding-bottom: 150px;
 }
 
-.footer-top {
-}
-
 .footer-top__title {
   max-width: 350px;
   margin: 0;
   margin-right: 32px;
   font-size: 40px;
   line-height: 42px;
+  letter-spacing: -0.4;
   color: var(--title-color);
 }
 
@@ -304,4 +317,88 @@ footer .sitenav__link {
 
 .footer-bottom__logo-link:hover {
   color: tomato;
+}
+
+
+/* PORTFOLIO INDEX */
+
+.main-content__feature {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 95px;
+}
+
+.feature__block-img {
+  width: 540px;
+  height: 500px;
+  padding: 50px 54px 0;
+  background-color: transparent;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.manage-img-block {
+  background-color: #ffefec;
+}
+
+.bookmark-img-block {
+  background-color: #4f63d8;
+}
+
+.insure-img-block {
+  background-color: #9A99AB;
+}
+
+.fylo-img-block {
+  background-color: #41b4d3;
+}
+
+.main-content__feature:nth-child(2n) {
+  padding-left: 95px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.manage-img {
+  box-shadow: 0px 2px 46px 0px #F3603C19;
+}
+
+.bookmark-img {
+  box-shadow: 20px 20px 0px 0px #00000026;
+}
+
+.insure-img {
+
+}
+
+.feature__content {
+  width: 350px;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.feature__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  flex-grow: 1;
+  letter-spacing: -0.4px;
+  color: var(--title-color);
+}
+
+.feature__text {
+  max-width: 310px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Public sasn;
 }
