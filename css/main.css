@@ -496,9 +496,11 @@ footer .sitenav__link {
 .feature-block__title {
   margin-top: 0;
   margin-bottom: 28px;
+  font-weight: 400;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -1px;
+  color: var(--title-color);
 }
 
 .feature-block__text {
@@ -517,9 +519,11 @@ footer .sitenav__link {
 .feature-block__heading {
   margin-top: 0;
   margin-bottom: 28px;
+  font-weight: 400;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -1px;
+  color: var(--title-color);
 }
 
 .feature-block__img {
